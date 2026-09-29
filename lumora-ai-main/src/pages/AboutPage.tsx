@@ -137,8 +137,8 @@ export const AboutPage: React.FC = () => {
             <div className="w-32 h-32 sm:w-48 sm:h-48 shrink-0 bg-gradient-to-tr from-teal-500 via-teal-500 to-pink-500 p-1.5 rounded-full shadow-2xl relative group">
               <div className="w-full h-full bg-white rounded-full flex items-center justify-center border-4 border-white overflow-hidden">
                 <img
-                  src={dipendraProfileImg}
-                  alt="Dipendra Kumar - Full Stack Developer"
+                  src={subhashProfileImg}
+                  alt="Subhash kumar Sahani - Full Stack Developer"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -152,10 +152,10 @@ export const AboutPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl sm:text-4xl font-black text-[#0A1F1B] font-display">
-                  Dipendra Kumar
+                  Subhash kumar Sahani
                 </h3>
                 <h4 className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-pink-600 mt-1">
-                  Full-Stack AI Developer
+                  Java Backend Devloper
                 </h4>
                 <p className="text-[#0A1F1B]/75 font-body mt-3 max-w-xl text-sm sm:text-base leading-relaxed mx-auto sm:mx-0">
                   I'm a passionate Full-Stack Developer specializing in modern
@@ -173,7 +173,7 @@ export const AboutPage: React.FC = () => {
                 {/* Developer Social Links */}
                 <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 mt-6">
                   <a
-                    href="https://github.com/Dipendra2003"
+                    href="https://github.com/subhash-kr09"
                     target="_blank"
                     rel="noreferrer"
                     className="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-colors border border-slate-200"
@@ -181,7 +181,7 @@ export const AboutPage: React.FC = () => {
                     <Github className="w-4 h-4" />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/dipendra-kumar-b077b9286/"
+                    href="https://www.linkedin.com/in/subhash-kumar-sahani/"
                     target="_blank"
                     rel="noreferrer"
                     className="w-10 h-10 rounded-full bg-slate-100 hover:bg-teal-50 flex items-center justify-center text-slate-700 hover:text-teal-600 transition-colors border border-slate-200"
@@ -189,20 +189,12 @@ export const AboutPage: React.FC = () => {
                     <Linkedin className="w-4 h-4" />
                   </a>
                   <a
-                    href="mailto:dipendrak299@gmail.com"
+                    href="mailto:98697286a@gmail.com"
                     className="w-10 h-10 rounded-full bg-slate-100 hover:bg-pink-50 flex items-center justify-center text-slate-700 hover:text-pink-600 transition-colors border border-slate-200"
                   >
                     <Mail className="w-4 h-4" />
                   </a>
-                  <a
-                    href="https://portfolio-dipendra.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="px-4 h-10 rounded-full bg-slate-100 hover:bg-teal-600 flex items-center justify-center text-slate-700 hover:text-white transition-colors border border-slate-200 text-xs font-bold gap-2"
-                  >
-                    <span>Portfolio</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+                  
                 </div>
               </div>
             </div>

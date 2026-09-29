@@ -162,7 +162,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
-                href="https://github.com/Dipendra2003"
+                href="https://github.com/subhash-kr09"
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded-full bg-white border border-[#D3E4DE] flex items-center justify-center text-[#0A1F1B] hover:bg-[#0A1F1B] hover:text-white transition-colors"
@@ -171,7 +171,7 @@ export const Footer: React.FC = () => {
                 <Github className="w-4 h-4" />
               </a>
               <a
-                href="https://www.linkedin.com/in/dipendra-kumar-b077b9286/"
+                href="https://www.linkedin.com/in/subhash-kumar-sahani/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded-full bg-white border border-[#D3E4DE] flex items-center justify-center text-[#0A1F1B] hover:bg-blue-600 hover:text-white transition-colors"
@@ -180,22 +180,13 @@ export const Footer: React.FC = () => {
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href="mailto:dipendrak299@gmail.com"
+                href="mailto:98697286a@gmail.com"
                 className="w-8 h-8 rounded-full bg-white border border-[#D3E4DE] flex items-center justify-center text-[#0A1F1B] hover:bg-pink-600 hover:text-white transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4" />
               </a>
-              <a
-                href="https://portfolio-dipendra.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="px-3 h-8 rounded-full bg-white border border-[#D3E4DE] flex items-center justify-center text-[#0A1F1B] hover:bg-[#0D9488] hover:text-white transition-colors gap-1.5"
-                aria-label="Portfolio"
-              >
-                <span className="text-xs font-bold font-display">Portfolio</span>
-                <ExternalLink className="w-3 h-3" />
-              </a>
+             
             </div>
           </div>
         </div>
