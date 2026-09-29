@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ArrowUpRight, ChevronDown, Sparkles } from 'lucide-react';
+import { Menu, X, ArrowUpRight, ChevronDown } from 'lucide-react';
 import { TOOLS_LIST } from '../data/toolsMeta';
 
 const NAV_LINKS = [
@@ -61,9 +61,7 @@ export const Navbar: React.FC = () => {
       >
         {/* Brand */}
         <Link to="/" className="flex items-center gap-2.5 hover:opacity-85 transition-opacity">
-          <span className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#0D9488] to-[#2DD4BF] flex items-center justify-center shadow-sm">
-            <Sparkles className="w-4 h-4 text-white" />
-          </span>
+          <img src="/favicon.svg" alt="" className="w-8 h-8 rounded-xl shadow-sm" />
           <span className="text-base sm:text-lg font-black tracking-tight text-[#0A1F1B] font-display">
             Lumora <span className="text-[#0D9488]">AI</span>
           </span>
