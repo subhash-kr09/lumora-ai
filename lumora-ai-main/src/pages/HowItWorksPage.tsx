@@ -200,7 +200,7 @@ export const HowItWorksPage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-left space-y-16">
+    <div className="studio-page studio-how max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-left space-y-16">
       {/* 1. Header Hero */}
       <div className="space-y-4 max-w-3xl">
         <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0D9488] bg-[#0D9488]/10 border border-[#0D9488]/20 px-4 py-1.5 rounded-full">
@@ -294,6 +294,7 @@ export const HowItWorksPage: React.FC = () => {
                 {/* Accordion Header */}
                 <button
                   onClick={() => setExpandedTool(isExpanded ? null : tool.id)}
+                  aria-expanded={isExpanded}
                   className="w-full p-5 sm:p-6 flex items-center justify-between text-left hover:bg-[#F8FBFA]/80 transition-colors"
                 >
                   <div className="flex items-center gap-4">

@@ -12,7 +12,7 @@ export const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-left space-y-6">
+    <div className="studio-page studio-contact max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-left space-y-6">
       <div className="space-y-2 text-center">
         <span className="text-xs font-semibold text-teal-600 uppercase tracking-wider">
           Student & Educator Support

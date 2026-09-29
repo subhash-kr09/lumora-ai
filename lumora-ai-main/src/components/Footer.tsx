@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, ArrowUp, Sparkles, MessageCircle, Mail, ExternalLink } from 'lucide-react';
 import { Github, Twitter, Linkedin } from './SocialIcons';
-import footerCharacterImg from '../assets/images/footer_creative_character_1790345423087.jpg';
+import footerCharacterImg from '../assets/images/hero_woman_coding_alt.jpg';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
             <div className="relative rounded-[2.5rem] overflow-hidden border-2 border-[#D3E4DE] bg-[#EEF6F3] shadow-xl aspect-4/3 group">
               <img
                 src={footerCharacterImg}
-                alt="Playful 3D tactile educational character companion"
+                alt="A team collaborating around a laptop"
                 className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />

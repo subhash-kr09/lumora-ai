@@ -108,6 +108,101 @@
   transform: rotateY(180deg);
 }
 
+.studio-page {
+  color: #17251e;
+}
+
+.studio-page [class*="bg-white"],
+.studio-page [class*="bg-slate-50"] {
+  background-color: #fffdf7 !important;
+}
+
+.studio-page [class*="border-"] {
+  border-color: #deddd3 !important;
+}
+
+.studio-page [class*="rounded-"] {
+  border-radius: 6px !important;
+}
+
+.studio-page [class*="text-teal-"],
+.studio-page [class*="text-[#0D9488]"],
+.studio-page [class*="text-pink-"] {
+  color: #d94f36 !important;
+}
+
+.studio-page [class*="bg-teal-"],
+.studio-page [class*="bg-pink-"],
+.studio-page [class*="bg-[#0D9488]"] {
+  background-color: #f6e6dc !important;
+}
+
+.studio-page [class*="bg-[#0A1F1B]"] {
+  background-color: #17251e !important;
+}
+
+.studio-page [class*="bg-clip-text"] {
+  background-image: none !important;
+  color: #d94f36 !important;
+  -webkit-text-fill-color: #d94f36;
+}
+
+.studio-about {
+  background-color: #f3f0e7;
+}
+
+.studio-about > .studio-atmosphere {
+  display: none;
+}
+
+.studio-about .developer-avatar,
+.studio-about .developer-avatar-inner {
+  border-radius: 50% !important;
+}
+
+.studio-how [class*="bg-gradient-to-br"] {
+  background-image: none !important;
+  background-color: #315c43 !important;
+}
+
+/* Shared visual treatment for all tool workspaces. */
+.tool-workspace {
+  background-color: #f3f0e7;
+}
+
+.tool-workspace:not(.tool-chat-workspace) [class*="bg-white"][class*="border"][class*="rounded"] {
+  border-color: #deddd3 !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(23, 37, 30, 0.045);
+}
+
+.tool-workspace:not(.tool-chat-workspace) :is(input:not([type="checkbox"]), textarea, select) {
+  border-color: #d2d0c5 !important;
+  border-radius: 4px !important;
+  background-color: #fffdf7 !important;
+}
+
+.tool-workspace:not(.tool-chat-workspace) :is(input, textarea, select):focus {
+  border-color: #d94f36 !important;
+  outline-color: #d94f36;
+}
+
+.tool-chat-workspace [class*="bg-[#F8FBFA]"] {
+  background-color: #f3f0e7 !important;
+}
+
+.tool-chat-workspace [class*="border-[#D3E4DE]"] {
+  border-color: #d8d6ca !important;
+}
+
+.tool-chat-workspace [class*="bg-teal-50"] {
+  background-color: #f8e7df !important;
+}
+
+.tool-chat-workspace [class*="text-[#0D9488]"] {
+  color: #d94f36 !important;
+}
+
 /* Motion-first editorial hover styles */
 @media (prefers-reduced-motion: no-preference) {
   .editorial-card {

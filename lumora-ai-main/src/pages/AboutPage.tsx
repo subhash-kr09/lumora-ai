@@ -16,14 +16,14 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { Github, Linkedin } from "../components/SocialIcons";
-import dipendraProfileImg from "../assets/images/dipendra-profile.jpg";
+import subhashProfileImg from "../assets/images/subhashProfileImg.jpg";
 
 export const AboutPage: React.FC = () => {
   return (
-    <div className="relative min-h-screen text-[#0A1F1B] overflow-hidden pb-20">
+    <div className="studio-page studio-about relative min-h-screen text-[#0A1F1B] overflow-hidden pb-20">
       {/* Background Gradients & Effects */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-b from-teal-500/10 to-transparent rounded-full blur-[120px] pointer-events-none -translate-y-1/3 translate-x-1/3" />
-      <div className="absolute top-1/2 left-0 w-[800px] h-[800px] bg-gradient-to-t from-pink-500/10 to-transparent rounded-full blur-[120px] pointer-events-none -translate-x-1/4" />
+      <div className="studio-atmosphere absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-b from-teal-500/10 to-transparent rounded-full blur-[120px] pointer-events-none -translate-y-1/3 translate-x-1/3" />
+      <div className="studio-atmosphere absolute top-1/2 left-0 w-[800px] h-[800px] bg-gradient-to-t from-pink-500/10 to-transparent rounded-full blur-[120px] pointer-events-none -translate-x-1/4" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 relative z-10 space-y-16">
         {/* Header Section */}
@@ -134,13 +134,13 @@ export const AboutPage: React.FC = () => {
         <div className="bg-white/60 backdrop-blur-md rounded-3xl p-8 sm:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white/40 relative overflow-hidden text-center sm:text-left">
           <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-12 relative z-10">
             {/* Developer Avatar/Icon */}
-            <div className="w-32 h-32 sm:w-48 sm:h-48 shrink-0 bg-gradient-to-tr from-teal-500 via-teal-500 to-pink-500 p-1.5 rounded-full shadow-2xl relative group">
-              <div className="w-full h-full bg-white rounded-full flex items-center justify-center border-4 border-white overflow-hidden">
-                <img
-                  src={subhashProfileImg}
-                  alt="Subhash kumar Sahani - Full Stack Developer"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+            <div className="developer-avatar w-32 h-32 sm:w-48 sm:h-48 shrink-0 bg-gradient-to-tr from-teal-500 via-teal-500 to-pink-500 p-1.5 rounded-full shadow-2xl relative group">
+              <div className="developer-avatar-inner w-full h-full bg-white rounded-full flex items-center justify-center border-4 border-white overflow-hidden">
+                  <img
+                    src={subhashProfileImg}
+                    alt="Subhash Kumar Sahani"
+                    className="w-full h-full object-cover object-top"
+                  />
               </div>
             </div>
 

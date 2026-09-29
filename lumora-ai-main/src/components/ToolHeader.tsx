@@ -22,59 +22,58 @@ export const ToolHeader: React.FC<ToolHeaderProps> = ({
   statusText = 'AI Ready'
 }) => {
   return (
-    <div className="mb-10 text-left space-y-4">
-      {/* Top row: Back button and status indicator */}
-      <div className="flex items-center justify-between">
+    <div className="mb-8 border-b border-[#c9c7b9] pb-6 text-left">
+      <div className="flex items-center justify-between gap-3 border-b border-[#d8d6ca] pb-3">
         <Link
           to="/"
-          className="group inline-flex items-center gap-2 text-xs font-bold text-[#0A1F1B]/75 hover:text-[#0A1F1B] bg-white border border-[#D3E4DE] hover:border-[#0A1F1B] px-4 py-2 rounded-full transition-all shadow-sm"
+          className="group inline-flex min-h-9 items-center gap-2 bg-[#e3c94d] px-3 text-xs font-bold text-[#17251e] transition-colors hover:bg-[#d6ba38]"
         >
           <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
-          <span>← All Tools</span>
+          <span>All tools</span>
         </Link>
 
-        <div className="flex items-center gap-3">
+        <div className="flex min-w-0 items-center gap-2 text-[10px] font-bold uppercase">
           {category && (
-            <span className="hidden sm:inline text-xs font-medium text-[#0A1F1B]/60 font-body">
+            <span className="hidden truncate text-[#69766c] sm:inline">
               {category}
             </span>
           )}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D3E4DE]/70 border border-[#D3E4DE] text-[11px] font-bold text-[#0A1F1B]">
-            <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
+          <div className="inline-flex shrink-0 items-center gap-1.5 border border-[#c9c7b9] bg-[#fffdf7] px-2.5 py-1 text-[#315c43]">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#d94f36]" />
             <span>{statusText}</span>
           </div>
         </div>
       </div>
 
-      {/* Main Editorial Header */}
-      <div className="pt-2 flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div className="space-y-2 max-w-3xl">
-          <div className="flex items-center gap-2.5">
+      <div className="grid gap-4 pt-5 sm:grid-cols-[1fr_auto] sm:items-end">
+        <div className="max-w-4xl space-y-3">
+          <div className="flex flex-wrap items-center gap-2">
             {toolNumber && (
-              <span className="font-mono text-xs font-black px-2.5 py-0.5 rounded-full bg-[#0D9488]/15 text-[#0D9488] border border-[#0D9488]/30">
-                {toolNumber}
+              <span className="font-mono text-xs font-black text-[#d94f36]">
+                {toolNumber} / 10
               </span>
             )}
             {badge && (
-              <span className="text-[11px] font-bold text-[#0A1F1B]/70 uppercase tracking-wider font-body">
+              <span className="border-l border-[#c9c7b9] pl-2 text-[10px] font-bold uppercase text-[#69766c]">
                 {badge}
               </span>
             )}
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0A1F1B] tracking-tight font-display flex items-center gap-3">
+          <h1 className="flex items-center gap-3 text-3xl font-black leading-tight text-[#17251e] sm:text-4xl md:text-5xl">
             {icon && (
-              <span className="p-2 rounded-2xl bg-white border border-[#D3E4DE] shadow-sm inline-flex items-center justify-center shrink-0">
+              <span className="inline-flex shrink-0 items-center justify-center bg-[#e3c94d] p-2.5 text-[#17251e]">
                 {icon}
               </span>
             )}
             <span>{title}</span>
           </h1>
 
-          <p className="text-sm sm:text-base text-[#0A1F1B]/70 font-body leading-relaxed max-w-2xl">
+          <p className="max-w-2xl text-sm leading-relaxed text-[#59655d] sm:text-base">
             {subtitle}
           </p>
         </div>
+        <Sparkles className="hidden h-8 w-8 text-[#d94f36] sm:block" aria-hidden="true" />
       </div>
     </div>
   );

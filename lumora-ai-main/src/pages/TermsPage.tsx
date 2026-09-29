@@ -4,7 +4,7 @@ import { FileText, ArrowLeft } from 'lucide-react';
 
 export const TermsPage: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-left space-y-8">
+    <div className="studio-page studio-legal max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-left space-y-8">
       <div>
         <Link
           to="/"

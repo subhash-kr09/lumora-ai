@@ -46,6 +46,14 @@ const TOOL_ROUTES = new Set([
   '/ocr-summarizer'
 ]);
 
+const STUDIO_ROUTES = new Set([
+  '/how-it-works',
+  '/about',
+  '/contact',
+  '/privacy',
+  '/terms'
+]);
+
 // Hide Footer inside tools so workspaces remain clean, focused, and free of clutter
 function ConditionalFooter() {
   const { pathname } = useLocation();
@@ -58,16 +66,22 @@ function ConditionalFooter() {
 function MainContentWrapper({ children }: { children: React.ReactNode }) {
   const { pathname } = useLocation();
   const isDoubtSolver = pathname === '/doubt-solver';
+  const isToolWorkspace = TOOL_ROUTES.has(pathname);
+  const isStudioPage = STUDIO_ROUTES.has(pathname);
 
   return (
     <div
       className={`${
         isDoubtSolver ? 'h-[100dvh] max-h-[100dvh] overflow-hidden' : 'min-h-screen'
-      } bg-[#EEF6F3] text-[#0A1F1B] flex flex-col font-body selection:bg-[#0D9488] selection:text-white transition-colors duration-200`}
+      } ${
+        isToolWorkspace || isStudioPage
+          ? 'bg-[#f3f0e7] text-[#17251e] selection:bg-[#d94f36]'
+          : 'bg-[#EEF6F3] text-[#0A1F1B] selection:bg-[#0D9488]'
+      } selection:text-white flex flex-col font-body transition-colors duration-200`}
     >
       <Navbar />
 
-      <main className={`flex-1 ${isDoubtSolver ? 'min-h-0 flex flex-col overflow-hidden' : ''}`}>
+      <main className={`flex-1 ${isDoubtSolver ? 'min-h-0 flex flex-col overflow-hidden' : ''} ${isToolWorkspace ? `tool-workspace ${isDoubtSolver ? 'tool-chat-workspace' : ''}` : ''}`}>
         {children}
       </main>
 
